@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html  lang="es">
+    
+    <Head>
+        <meta charset="utf-8" />
+        <title>Proyecto Arduino</title>
+        <link rel="stylesheet" href="./CSS/CSS.css" type="text/css" media="all" /> <!--Llamar ala carpeta de CSS que va a tener la parte grafica-->
+        <link rel="stylesheet" href="./CSS/css/styles.css" />
+		<link rel="stylesheet" href="./CSS/font-awesome/css/font-awesome.css" />
+    <head>
+    
+    <body>
+        <nav id="colorNav">
+			<ul>
+				<li class="green">
+					<a href="#" class="icon-home"></a>
+					<ul>
+						<li><a href="index.html">Back to the tutorial</a></li>
+					</ul>
+				</li>
+				<li class="red">
+					<a href="#" class="icon-cogs"></a>
+					<ul>
+						<li><a href="#">Team</a></li>
+					</ul>
+				</li>
+				<li class="yellow">
+					<a href="#" class="icon-beaker"></a>
+					<ul>
+						<li><a href="#">Sin contenido</a></li>
+					</ul>
+				</li>
+				<li class="purple">
+					<a href="#" class="icon-envelope"></a>
+					<ul>
+						<li><a href="#">Sin contenido</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+    
+    
+        <br><br><br><br>
+        <!--Primera parte-->
+        <div class="caja">
+            
+            <div class="Fondo">
+                <h1 class="title"> <font color="White">Primer Avance proyecto Arduino</font></h1>
+            </div>
+    
+            <div class="Des">
+                <br><HR><br><br>
+                <p>En este avance se mostrarán los pasos efectuados para llevar a cabo el ensamblaje del proyecto que consiste
+                    en armar tanto el hardware como el software de un carro autodirigible que evite colisiones con paredes. Se mostraran paso a paso el ensamblaje de
+                    la arquitectura y se explicará el código ensamblador que hace que el carro se mueva</p>
+                <br>
+                <p>A continuacion se muestra un video del carro en funcionamiento:</p>
+                <br>
+                <video class="video" controls>
+                <source src="./vid/video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+                </video>
+            </div>
+
+        </div><br><br>
+        
+        <!--Segunda parte-->
+        <div class="caja">
+            
+            <div class="Fondo">
+                <h1 class="title"><font color="White">Pasos para el ensamblaje de la parte fisica (prototipo)</font></h1>
+            </div>
+    
+            <!--en esta parte se necesita hacer en una tabla-->
+                
+                <table class="Des">
+                    <br><HR><br><br>
+                    <thead> 
+                        <tr>
+                            <th><h2 class="title1">Imagen</h2></th>
+                            <th><h2 class="title1">Descripcion del paso</h2></th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td><img src="./imag/1.jpeg" with ="300px" height="300px"/></td>
+                        <td>
+                            <p>Paso 1:</p>
+                            <p>Una vez reunidos todos los materiales se  procederá a armar la estrutura del carro</p>
+                        </td>
+                        
+                    </tr>
+
+                     <tr>
+                        <td><img src="./imag/2.jpeg" with ="300px" height="300px"/></td>
+                        <td>
+                            <p>Paso 2:</p>
+                            <p>Se monta la placa de arduino y la breadboard sobre la superficie del carro de manera que la breadboard quede al frente y la placa de arduino en la parte trasera</p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><img src="./imag/3.jpeg" with ="300px" height="300px"/></td>
+                        <td>
+                            <p>Paso 3:</p>
+                            <p>Se coloca el sensor en la parte frontal de la breadboard, apuntando hacia el frente del carro</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./imag/4.jpeg" with ="300px" height="300px"/></td>
+                        <td>
+                            <p>Paso 4:</p>
+                            <p>Se conectan las entradas de voltaje (rojo) y la tierra (negro) de la placa de arduino a la breadboard</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./imag/5.jpeg" with ="300px" height="300px"/></td>
+                        <td>
+                            <p>Paso 5:</p>
+                            <p>Se conectan el voltaje (rojo) y la tierra (naranja) del sensor con sus respectivos pares en la breadboard</p>
+                        </td>
+                    </tr>
+
+                     <tr>
+                        <td><img src="./imag/6.jpeg" with ="300px" height="300px"/></td>
+                        <td>
+                            <p>Paso 6:</p>
+                            <p>Se conectan los pines del ECHO y el TRIG del sensor a las entradas analogas A0 y A1 en la placa de arduino</p>
+                        </td>
+                    </tr>
+                        
+                    <tr>
+                        <td><img src="./imag/7.jpeg" with ="300px" height="300px"/></td>
+                        <td>
+                            <p>Paso 7:</p>
+                            <p>Se colocan los negativos (tierras) de los motores de las llantas a la breadboard</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./imag/8.jpeg" width="200px" height="200px"/></td>
+                        <td>
+                            <p>Paso 8:</p>
+                            <p>Se colocan los negativos del paso anterior en la parte superior de los motores</p>
+                        </td>
+                    </tr>
+                    
+
+                    <tr>
+                        <td><img src="./imag/9.jpeg" width="200px" height="200px"/></td>
+                        <td>
+                            <p>Paso 9:</p>
+                            <p>Se conectan los positivos de los motores en los pines 6 y 7 digitales en la placa de arduino</p>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="./imag/10.jpeg" width="200px" height="200px"/></td>
+                        <td>
+                            <p>Paso 10:</p>
+                            <p>Se conectan los positivos del paso anterior en la parte inferior de los motores</p>
+                        </td>
+                    </tr>
+
+                </table>
+
+        </div><br><br>
+
+        <!--tercera parte-->
+        <div class="caja">
+            
+            <div class="Fondo">
+                <h1 id="title"><font color="White">Parte programada</font></h1>
+            </div>
+    
+            <div class="Des">
+                <br><HR><br><br>
+                <p>EL siguiente código ensamblador es la parte de software programada y subida a la placa de arduino, este código es el responsable de
+                    darle al arduino las instrucciones para ejecutar los motores del carro y por consiguinete hacer que este se mueva</p>
+                <br>
+                <img src="./imag/codigo.jpg" width="800px" height="800px" />
+                <br><HR><br><br>
+                <p>El siguiente codigo ensamblador  es el utilizado para para que  el sensor de cercania funcione y así poder detectar si el carro se
+                    encuentra frente a una pared para cambiar de direccion</p>
+                <br>
+                <img src="./imag/codigo2.jpg" width="800px" height="800px" />
+                <br><HR>
+                
+            </div>
+        </div><br><br>
+        <!--Cuarta parte-->
+        <div class="caja">
+            
+            <div class="Fondo">
+                <h1 id="title"><font color="White">Parte programada final</font></h1>
+            </div>
+            
+            <div class="Des">
+                <br>
+                <p>A continuacion se muestra un video del carro en funcionamiento con código ensamblador:</p>
+                <br>
+                <br><br><br>
+                <video class="video" controls>
+                <source src="./vid/video2.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+                </video>
+
+                <br><br><br><HR><br><br>
+                <p>EL siguiente código ensamblador es la ultima parte de software programada el cual combina todas las partes que estamos utilizando(los motores, sensor utrasonico, estructura del
+                    carrito y arduino), para poder llevar acabo nuestro cometido de crear un carro que no choque en las paredes o en cualquier objeto que deba esquivar.</p>
+                <br><br><br>
+                <img src="./imag/codigo3.jpg" width="1050px" height="2100px" />
+                <br><HR><br><br><br><br>
+                
+            </div>
+        </div><br><br>
+
+    </body>
+</html>
